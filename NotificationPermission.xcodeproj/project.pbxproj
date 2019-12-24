@@ -10,6 +10,8 @@
 		0494C13623B1C81800279D81 /* NotificationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0494C12C23B1C81800279D81 /* NotificationPermission.framework */; };
 		0494C13B23B1C81800279D81 /* NotificationPermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C13A23B1C81800279D81 /* NotificationPermissionTests.swift */; };
 		0494C13D23B1C81800279D81 /* NotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 0494C12F23B1C81800279D81 /* NotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0494C14823B1CA6800279D81 /* PushNotificationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */; };
+		0494C14A23B1CA8700279D81 /* PushNotificationEnrollment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */; };
 		5E6628512A970972F7C560FC /* Pods_NotificationPermission_NotificationPermissionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500169B6BA22E84C279BB542 /* Pods_NotificationPermission_NotificationPermissionTests.framework */; };
 		7114DFEAF03C803222A72167 /* Pods_NotificationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CB84964DD4A8C56CA42EC9 /* Pods_NotificationPermission.framework */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		0494C13523B1C81800279D81 /* NotificationPermissionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationPermissionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494C13A23B1C81800279D81 /* NotificationPermissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionTests.swift; sourceTree = "<group>"; };
 		0494C13C23B1C81800279D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationStatus.swift; sourceTree = "<group>"; };
+		0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationEnrollment.swift; sourceTree = "<group>"; };
 		3432954037B0982C9E3D44D4 /* Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig"; path = "Target Support Files/Pods-NotificationPermission-NotificationPermissionTests/Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		500169B6BA22E84C279BB542 /* Pods_NotificationPermission_NotificationPermissionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermission_NotificationPermissionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB84964DD4A8C56CA42EC9 /* Pods_NotificationPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,8 @@
 		0494C14623B1C8C900279D81 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */,
+				0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -191,6 +197,7 @@
 				TargetAttributes = {
 					0494C12B23B1C81800279D81 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					0494C13423B1C81800279D81 = {
 						CreatedOnToolsVersion = 11.3;
@@ -302,6 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0494C14A23B1CA8700279D81 /* PushNotificationEnrollment.swift in Sources */,
+				0494C14823B1CA6800279D81 /* PushNotificationStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1EC353C90EA8D50ADA32A27 /* Pods-NotificationPermission.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -463,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermission;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEA9AAE6F6377AE3AA143BD1 /* Pods-NotificationPermission.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -496,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3432954037B0982C9E3D44D4 /* Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotificationPermissionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -514,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BA3BA1B4A980621A6B0F64C /* Pods-NotificationPermission-NotificationPermissionTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotificationPermissionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
