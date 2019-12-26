@@ -12,6 +12,7 @@
 		0494C13D23B1C81800279D81 /* NotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 0494C12F23B1C81800279D81 /* NotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0494C14823B1CA6800279D81 /* PushNotificationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */; };
 		0494C14A23B1CA8700279D81 /* PushNotificationEnrollment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */; };
+		04F4CFC523B4969800FC8D60 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 04F4CFC423B4969800FC8D60 /* .swiftlint.yml */; };
 		5E6628512A970972F7C560FC /* Pods_NotificationPermission_NotificationPermissionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500169B6BA22E84C279BB542 /* Pods_NotificationPermission_NotificationPermissionTests.framework */; };
 		7114DFEAF03C803222A72167 /* Pods_NotificationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CB84964DD4A8C56CA42EC9 /* Pods_NotificationPermission.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		0494C13C23B1C81800279D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationStatus.swift; sourceTree = "<group>"; };
 		0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationEnrollment.swift; sourceTree = "<group>"; };
+		04F4CFC423B4969800FC8D60 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3432954037B0982C9E3D44D4 /* Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig"; path = "Target Support Files/Pods-NotificationPermission-NotificationPermissionTests/Pods-NotificationPermission-NotificationPermissionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		500169B6BA22E84C279BB542 /* Pods_NotificationPermission_NotificationPermissionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermission_NotificationPermissionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65CB84964DD4A8C56CA42EC9 /* Pods_NotificationPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 		0494C12223B1C81800279D81 = {
 			isa = PBXGroup;
 			children = (
+				04F4CFC423B4969800FC8D60 /* .swiftlint.yml */,
 				0494C12E23B1C81800279D81 /* NotificationPermission */,
 				0494C13923B1C81800279D81 /* NotificationPermissionTests */,
 				0494C12D23B1C81800279D81 /* Products */,
@@ -155,6 +158,7 @@
 				0494C12823B1C81800279D81 /* Sources */,
 				0494C12923B1C81800279D81 /* Frameworks */,
 				0494C12A23B1C81800279D81 /* Resources */,
+				0494C14D23B22D9500279D81 /* Swiftlint Script */,
 			);
 			buildRules = (
 			);
@@ -235,12 +239,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F4CFC523B4969800FC8D60 /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0494C14D23B22D9500279D81 /* Swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		3441954C781CEE468E8B456C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
