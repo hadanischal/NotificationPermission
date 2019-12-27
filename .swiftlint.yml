@@ -2,6 +2,7 @@ excluded:
   - Carthage
   - Pods/
   - NotificationPermissionTests/Mocks/**
+  - NotificationPermissionTests/GeneratedMocks.swift
 
 line_length:
   - 300 # warning

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D4D3423B57809008FFE6E /* UserNotificationCenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4D3323B57809008FFE6E /* UserNotificationCenterProtocol.swift */; };
 		0494C13623B1C81800279D81 /* NotificationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0494C12C23B1C81800279D81 /* NotificationPermission.framework */; };
 		0494C13B23B1C81800279D81 /* NotificationPermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C13A23B1C81800279D81 /* NotificationPermissionTests.swift */; };
 		0494C13D23B1C81800279D81 /* NotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 0494C12F23B1C81800279D81 /* NotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043D4D3323B57809008FFE6E /* UserNotificationCenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationCenterProtocol.swift; sourceTree = "<group>"; };
 		0494C12C23B1C81800279D81 /* NotificationPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494C12F23B1C81800279D81 /* NotificationPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationPermission.h; sourceTree = "<group>"; };
 		0494C13023B1C81800279D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		0494C14623B1C8C900279D81 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				043D4D3323B57809008FFE6E /* UserNotificationCenterProtocol.swift */,
 				0494C14723B1CA6800279D81 /* PushNotificationStatus.swift */,
 				0494C14923B1CA8700279D81 /* PushNotificationEnrollment.swift */,
 			);
@@ -178,6 +181,7 @@
 				0494C13223B1C81800279D81 /* Frameworks */,
 				0494C13323B1C81800279D81 /* Resources */,
 				7836040F1F8E5C9F9F706ADB /* [CP] Embed Pods Frameworks */,
+				043D4D3523B57893008FFE6E /* Cuckoo Script */,
 			);
 			buildRules = (
 			);
@@ -246,6 +250,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		043D4D3523B57893008FFE6E /* Cuckoo Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/NotificationPermission/Classes/UserNotificationCenterProtocol.swift",
+			);
+			name = "Cuckoo Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
 		0494C14D23B22D9500279D81 /* Swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0494C14A23B1CA8700279D81 /* PushNotificationEnrollment.swift in Sources */,
+				043D4D3423B57809008FFE6E /* UserNotificationCenterProtocol.swift in Sources */,
 				0494C14823B1CA6800279D81 /* PushNotificationStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,19 +13,19 @@ import RxSwift
 protocol PushNotificationEnrolling: class {
     var requestAccess: Single<Bool> { get }
     var authorizationStatus: Single<PushNotificationStatus> { get }
-    func setupPushNotificationsRx() -> Single<PushNotificationStatus>
+    func setupPushNotifications() -> Single<PushNotificationStatus>
 }
 
 public final class PushNotificationEnrollment: PushNotificationEnrolling {
 
-    private var notificationCenter: UNUserNotificationCenter
+    private var notificationCenter: UNUserNotificationCenterProtocol
 
-    public init(withNotificationCenter notificationCenter: UNUserNotificationCenter = UNUserNotificationCenter.current()) {
+    public init(withNotificationCenter notificationCenter: UNUserNotificationCenterProtocol = UNUserNotificationCenter.current()) {
         self.notificationCenter = notificationCenter
     }
 
     // MARK: - Setup PushNotifications Rx
-    public func setupPushNotificationsRx() -> Single<PushNotificationStatus> {
+    public func setupPushNotifications() -> Single<PushNotificationStatus> {
         return self.authorizationStatus
             .flatMap { status -> Single<PushNotificationStatus> in
                 if [.denied, .provisional].contains(status) {
@@ -58,7 +58,7 @@ public final class PushNotificationEnrollment: PushNotificationEnrolling {
                         print ("Push notifications provisional")
                         single(.success(.provisional))
                     @unknown default:
-                        fatalError("UNUserNotificationCenter.current().getNotificationSettings.authorizationStatus is not available on this version of OS.")
+                        assertionFailure("UNUserNotificationCenter.current().getNotificationSettings.authorizationStatus is not available on this version of OS.")
                     }
                 })
             return Disposables.create()
