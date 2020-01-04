@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040FCB5923C0569E00265ACC /* MaterializedSequenceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB5823C0569E00265ACC /* MaterializedSequenceResult.swift */; };
 		043D4D3423B57809008FFE6E /* UserNotificationCenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4D3323B57809008FFE6E /* UserNotificationCenterProtocol.swift */; };
+		043D4D4023B6B99F008FFE6E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4D3F23B6B99F008FFE6E /* GeneratedMocks.swift */; };
+		043D4D4223B6B9C6008FFE6E /* PushNotificationEnrollmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4D4123B6B9C6008FFE6E /* PushNotificationEnrollmentTests.swift */; };
 		0494C13623B1C81800279D81 /* NotificationPermission.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0494C12C23B1C81800279D81 /* NotificationPermission.framework */; };
 		0494C13B23B1C81800279D81 /* NotificationPermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0494C13A23B1C81800279D81 /* NotificationPermissionTests.swift */; };
 		0494C13D23B1C81800279D81 /* NotificationPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = 0494C12F23B1C81800279D81 /* NotificationPermission.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,7 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040FCB5823C0569E00265ACC /* MaterializedSequenceResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterializedSequenceResult.swift; sourceTree = "<group>"; };
 		043D4D3323B57809008FFE6E /* UserNotificationCenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationCenterProtocol.swift; sourceTree = "<group>"; };
+		043D4D3F23B6B99F008FFE6E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		043D4D4123B6B9C6008FFE6E /* PushNotificationEnrollmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationEnrollmentTests.swift; sourceTree = "<group>"; };
 		0494C12C23B1C81800279D81 /* NotificationPermission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationPermission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0494C12F23B1C81800279D81 /* NotificationPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationPermission.h; sourceTree = "<group>"; };
 		0494C13023B1C81800279D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040FCB5723C0569E00265ACC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				040FCB5823C0569E00265ACC /* MaterializedSequenceResult.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		0494C12223B1C81800279D81 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,9 @@
 		0494C13923B1C81800279D81 /* NotificationPermissionTests */ = {
 			isa = PBXGroup;
 			children = (
+				040FCB5723C0569E00265ACC /* Utility */,
+				043D4D3F23B6B99F008FFE6E /* GeneratedMocks.swift */,
+				043D4D4123B6B9C6008FFE6E /* PushNotificationEnrollmentTests.swift */,
 				0494C13A23B1C81800279D81 /* NotificationPermissionTests.swift */,
 				0494C13C23B1C81800279D81 /* Info.plist */,
 			);
@@ -365,7 +382,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040FCB5923C0569E00265ACC /* MaterializedSequenceResult.swift in Sources */,
 				0494C13B23B1C81800279D81 /* NotificationPermissionTests.swift in Sources */,
+				043D4D4223B6B9C6008FFE6E /* PushNotificationEnrollmentTests.swift in Sources */,
+				043D4D4023B6B99F008FFE6E /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
