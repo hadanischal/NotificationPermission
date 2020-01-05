@@ -10,7 +10,7 @@ import Foundation
 import UserNotifications
 import RxSwift
 
-protocol PushNotificationEnrolling: class {
+public protocol PushNotificationEnrolling: class {
     var requestAccess: Single<Bool> { get }
     var authorizationStatus: Single<PushNotificationStatus> { get }
     func setupPushNotifications() -> Single<PushNotificationStatus>
