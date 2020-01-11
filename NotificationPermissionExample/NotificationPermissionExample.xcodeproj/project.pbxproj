@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040FCB6723C060EA00265ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB6623C060EA00265ACC /* AppDelegate.swift */; };
+		040FCB6923C060EA00265ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB6823C060EA00265ACC /* SceneDelegate.swift */; };
+		040FCB6B23C060EA00265ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB6A23C060EA00265ACC /* ViewController.swift */; };
+		040FCB6E23C060EA00265ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040FCB6C23C060EA00265ACC /* Main.storyboard */; };
+		040FCB7123C060EA00265ACC /* NotificationPermissionExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB6F23C060EA00265ACC /* NotificationPermissionExample.xcdatamodeld */; };
+		040FCB7323C060EC00265ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040FCB7223C060EC00265ACC /* Assets.xcassets */; };
+		040FCB7623C060EC00265ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040FCB7423C060EC00265ACC /* LaunchScreen.storyboard */; };
+		040FCB8123C060EC00265ACC /* NotificationPermissionExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB8023C060EC00265ACC /* NotificationPermissionExampleTests.swift */; };
+		040FCB8C23C060EC00265ACC /* NotificationPermissionExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB8B23C060EC00265ACC /* NotificationPermissionExampleUITests.swift */; };
+		040FCB9B23C063C000265ACC /* PushNotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB9A23C063C000265ACC /* PushNotificationsViewModel.swift */; };
+		040FCB9D23C063E000265ACC /* PushNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCB9C23C063E000265ACC /* PushNotificationsViewController.swift */; };
+		040FCBA023C0684B00265ACC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 040FCB9F23C0684B00265ACC /* .swiftlint.yml */; };
+		040FCBAA23C0A52F00265ACC /* MockPushNotificationEnrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCBA923C0A52F00265ACC /* MockPushNotificationEnrolling.swift */; };
+		040FCBAC23C0A62700265ACC /* PushNotificationsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FCBAB23C0A62700265ACC /* PushNotificationsViewModelTests.swift */; };
+		70BB8AA9566407682CEF0A28 /* Pods_NotificationPermissionExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2EFBFED38590D8FA9A0702 /* Pods_NotificationPermissionExample.framework */; };
+		BA177C9F0A41FBEDD06F4E5C /* Pods_NotificationPermissionExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD273049B1DD1D706BC36B4 /* Pods_NotificationPermissionExampleTests.framework */; };
+		CD35476D54580F0F0293A9A0 /* Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5F00C861592FEF69AB0A79 /* Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		040FCB7D23C060EC00265ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040FCB5B23C060EA00265ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040FCB6223C060EA00265ACC;
+			remoteInfo = NotificationPermissionExample;
+		};
+		040FCB8823C060EC00265ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 040FCB5B23C060EA00265ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 040FCB6223C060EA00265ACC;
+			remoteInfo = NotificationPermissionExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040FCB6323C060EA00265ACC /* NotificationPermissionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationPermissionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040FCB6623C060EA00265ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		040FCB6823C060EA00265ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		040FCB6A23C060EA00265ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		040FCB6D23C060EA00265ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		040FCB7023C060EA00265ACC /* NotificationPermissionExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotificationPermissionExample.xcdatamodel; sourceTree = "<group>"; };
+		040FCB7223C060EC00265ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		040FCB7523C060EC00265ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		040FCB7723C060EC00265ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040FCB7C23C060EC00265ACC /* NotificationPermissionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationPermissionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040FCB8023C060EC00265ACC /* NotificationPermissionExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionExampleTests.swift; sourceTree = "<group>"; };
+		040FCB8223C060EC00265ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040FCB8723C060EC00265ACC /* NotificationPermissionExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationPermissionExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040FCB8B23C060EC00265ACC /* NotificationPermissionExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermissionExampleUITests.swift; sourceTree = "<group>"; };
+		040FCB8D23C060EC00265ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040FCB9A23C063C000265ACC /* PushNotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewModel.swift; sourceTree = "<group>"; };
+		040FCB9C23C063E000265ACC /* PushNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewController.swift; sourceTree = "<group>"; };
+		040FCB9F23C0684B00265ACC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		040FCBA923C0A52F00265ACC /* MockPushNotificationEnrolling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPushNotificationEnrolling.swift; sourceTree = "<group>"; };
+		040FCBAB23C0A62700265ACC /* PushNotificationsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsViewModelTests.swift; sourceTree = "<group>"; };
+		6988E99684864CE25E1ED9B6 /* Pods-NotificationPermissionExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExampleTests/Pods-NotificationPermissionExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		897064F7C530B0991D22E07A /* Pods-NotificationPermissionExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExampleTests.release.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExampleTests/Pods-NotificationPermissionExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA5F00C861592FEF69AB0A79 /* Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C367F31502285DD1B03B58 /* Pods-NotificationPermissionExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExample.debug.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExample/Pods-NotificationPermissionExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0986D5A0E3D8845CDFCFF7 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F47A8CBB504B2150597E5D /* Pods-NotificationPermissionExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExample.release.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExample/Pods-NotificationPermissionExample.release.xcconfig"; sourceTree = "<group>"; };
+		D484B5DB89942917FD65C9B2 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE2EFBFED38590D8FA9A0702 /* Pods_NotificationPermissionExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermissionExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD273049B1DD1D706BC36B4 /* Pods_NotificationPermissionExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationPermissionExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		040FCB6023C060EA00265ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BB8AA9566407682CEF0A28 /* Pods_NotificationPermissionExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB7923C060EC00265ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA177C9F0A41FBEDD06F4E5C /* Pods_NotificationPermissionExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB8423C060EC00265ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD35476D54580F0F0293A9A0 /* Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040FCB5A23C060EA00265ACC = {
+			isa = PBXGroup;
+			children = (
+				040FCB9F23C0684B00265ACC /* .swiftlint.yml */,
+				040FCB6523C060EA00265ACC /* NotificationPermissionExample */,
+				040FCB7F23C060EC00265ACC /* NotificationPermissionExampleTests */,
+				040FCB8A23C060EC00265ACC /* NotificationPermissionExampleUITests */,
+				040FCB6423C060EA00265ACC /* Products */,
+				69C5983E93ABED4956B8C7F2 /* Pods */,
+				F98CCF3680AD318EB86228DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		040FCB6423C060EA00265ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				040FCB6323C060EA00265ACC /* NotificationPermissionExample.app */,
+				040FCB7C23C060EC00265ACC /* NotificationPermissionExampleTests.xctest */,
+				040FCB8723C060EC00265ACC /* NotificationPermissionExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		040FCB6523C060EA00265ACC /* NotificationPermissionExample */ = {
+			isa = PBXGroup;
+			children = (
+				040FCB9923C063AE00265ACC /* EnablePushNotifications */,
+				040FCB6623C060EA00265ACC /* AppDelegate.swift */,
+				040FCB6823C060EA00265ACC /* SceneDelegate.swift */,
+				040FCB6A23C060EA00265ACC /* ViewController.swift */,
+				040FCB6C23C060EA00265ACC /* Main.storyboard */,
+				040FCB7223C060EC00265ACC /* Assets.xcassets */,
+				040FCB7423C060EC00265ACC /* LaunchScreen.storyboard */,
+				040FCB7723C060EC00265ACC /* Info.plist */,
+				040FCB6F23C060EA00265ACC /* NotificationPermissionExample.xcdatamodeld */,
+			);
+			path = NotificationPermissionExample;
+			sourceTree = "<group>";
+		};
+		040FCB7F23C060EC00265ACC /* NotificationPermissionExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				040FCBA923C0A52F00265ACC /* MockPushNotificationEnrolling.swift */,
+				040FCBAB23C0A62700265ACC /* PushNotificationsViewModelTests.swift */,
+				040FCB8023C060EC00265ACC /* NotificationPermissionExampleTests.swift */,
+				040FCB8223C060EC00265ACC /* Info.plist */,
+			);
+			path = NotificationPermissionExampleTests;
+			sourceTree = "<group>";
+		};
+		040FCB8A23C060EC00265ACC /* NotificationPermissionExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				040FCB8B23C060EC00265ACC /* NotificationPermissionExampleUITests.swift */,
+				040FCB8D23C060EC00265ACC /* Info.plist */,
+			);
+			path = NotificationPermissionExampleUITests;
+			sourceTree = "<group>";
+		};
+		040FCB9923C063AE00265ACC /* EnablePushNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				040FCB9A23C063C000265ACC /* PushNotificationsViewModel.swift */,
+				040FCB9C23C063E000265ACC /* PushNotificationsViewController.swift */,
+			);
+			path = EnablePushNotifications;
+			sourceTree = "<group>";
+		};
+		69C5983E93ABED4956B8C7F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3C367F31502285DD1B03B58 /* Pods-NotificationPermissionExample.debug.xcconfig */,
+				D0F47A8CBB504B2150597E5D /* Pods-NotificationPermissionExample.release.xcconfig */,
+				CD0986D5A0E3D8845CDFCFF7 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.debug.xcconfig */,
+				D484B5DB89942917FD65C9B2 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.release.xcconfig */,
+				6988E99684864CE25E1ED9B6 /* Pods-NotificationPermissionExampleTests.debug.xcconfig */,
+				897064F7C530B0991D22E07A /* Pods-NotificationPermissionExampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F98CCF3680AD318EB86228DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE2EFBFED38590D8FA9A0702 /* Pods_NotificationPermissionExample.framework */,
+				AA5F00C861592FEF69AB0A79 /* Pods_NotificationPermissionExample_NotificationPermissionExampleUITests.framework */,
+				EAD273049B1DD1D706BC36B4 /* Pods_NotificationPermissionExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		040FCB6223C060EA00265ACC /* NotificationPermissionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040FCB9023C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExample" */;
+			buildPhases = (
+				3D54930F2A32A0412C113CD8 /* [CP] Check Pods Manifest.lock */,
+				040FCB5F23C060EA00265ACC /* Sources */,
+				040FCB6023C060EA00265ACC /* Frameworks */,
+				040FCB6123C060EA00265ACC /* Resources */,
+				89335D39379543F3AA86A8D9 /* [CP] Embed Pods Frameworks */,
+				040FCB9E23C0682700265ACC /* SwiftLint Script */,
+				040FCBA123C0A17400265ACC /* Cuckoo Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationPermissionExample;
+			productName = NotificationPermissionExample;
+			productReference = 040FCB6323C060EA00265ACC /* NotificationPermissionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		040FCB7B23C060EC00265ACC /* NotificationPermissionExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040FCB9323C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExampleTests" */;
+			buildPhases = (
+				82B52A38EF72A031A4588CC4 /* [CP] Check Pods Manifest.lock */,
+				040FCB7823C060EC00265ACC /* Sources */,
+				040FCB7923C060EC00265ACC /* Frameworks */,
+				040FCB7A23C060EC00265ACC /* Resources */,
+				5ECA6F80BB8E53E35E5C0DE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040FCB7E23C060EC00265ACC /* PBXTargetDependency */,
+			);
+			name = NotificationPermissionExampleTests;
+			productName = NotificationPermissionExampleTests;
+			productReference = 040FCB7C23C060EC00265ACC /* NotificationPermissionExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		040FCB8623C060EC00265ACC /* NotificationPermissionExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 040FCB9623C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExampleUITests" */;
+			buildPhases = (
+				239C1BB32C0F2F1B9A0F8E9F /* [CP] Check Pods Manifest.lock */,
+				040FCB8323C060EC00265ACC /* Sources */,
+				040FCB8423C060EC00265ACC /* Frameworks */,
+				040FCB8523C060EC00265ACC /* Resources */,
+				97B79AC41C0BE12F989B8958 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				040FCB8923C060EC00265ACC /* PBXTargetDependency */,
+			);
+			name = NotificationPermissionExampleUITests;
+			productName = NotificationPermissionExampleUITests;
+			productReference = 040FCB8723C060EC00265ACC /* NotificationPermissionExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		040FCB5B23C060EA00265ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nischal Hada";
+				TargetAttributes = {
+					040FCB6223C060EA00265ACC = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					040FCB7B23C060EC00265ACC = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 040FCB6223C060EA00265ACC;
+					};
+					040FCB8623C060EC00265ACC = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 040FCB6223C060EA00265ACC;
+					};
+				};
+			};
+			buildConfigurationList = 040FCB5E23C060EA00265ACC /* Build configuration list for PBXProject "NotificationPermissionExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 040FCB5A23C060EA00265ACC;
+			productRefGroup = 040FCB6423C060EA00265ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				040FCB6223C060EA00265ACC /* NotificationPermissionExample */,
+				040FCB7B23C060EC00265ACC /* NotificationPermissionExampleTests */,
+				040FCB8623C060EC00265ACC /* NotificationPermissionExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		040FCB6123C060EA00265ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040FCBA023C0684B00265ACC /* .swiftlint.yml in Resources */,
+				040FCB7623C060EC00265ACC /* LaunchScreen.storyboard in Resources */,
+				040FCB7323C060EC00265ACC /* Assets.xcassets in Resources */,
+				040FCB6E23C060EA00265ACC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB7A23C060EC00265ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB8523C060EC00265ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040FCB9E23C0682700265ACC /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		040FCBA123C0A17400265ACC /* Cuckoo Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../NotificationPermission/Classes/PushNotificationEnrollment.swift",
+			);
+			name = "Cuckoo Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\n# ... and so forth, the last line should never end with a backslash\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
+		239C1BB32C0F2F1B9A0F8E9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D54930F2A32A0412C113CD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationPermissionExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ECA6F80BB8E53E35E5C0DE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExampleTests/Pods-NotificationPermissionExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExampleTests/Pods-NotificationPermissionExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExampleTests/Pods-NotificationPermissionExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82B52A38EF72A031A4588CC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationPermissionExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89335D39379543F3AA86A8D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample/Pods-NotificationPermissionExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample/Pods-NotificationPermissionExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample/Pods-NotificationPermissionExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97B79AC41C0BE12F989B8958 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests/Pods-NotificationPermissionExample-NotificationPermissionExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040FCB5F23C060EA00265ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040FCB6B23C060EA00265ACC /* ViewController.swift in Sources */,
+				040FCB9D23C063E000265ACC /* PushNotificationsViewController.swift in Sources */,
+				040FCB6723C060EA00265ACC /* AppDelegate.swift in Sources */,
+				040FCB7123C060EA00265ACC /* NotificationPermissionExample.xcdatamodeld in Sources */,
+				040FCB6923C060EA00265ACC /* SceneDelegate.swift in Sources */,
+				040FCB9B23C063C000265ACC /* PushNotificationsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB7823C060EC00265ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040FCBAC23C0A62700265ACC /* PushNotificationsViewModelTests.swift in Sources */,
+				040FCB8123C060EC00265ACC /* NotificationPermissionExampleTests.swift in Sources */,
+				040FCBAA23C0A52F00265ACC /* MockPushNotificationEnrolling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		040FCB8323C060EC00265ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040FCB8C23C060EC00265ACC /* NotificationPermissionExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		040FCB7E23C060EC00265ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040FCB6223C060EA00265ACC /* NotificationPermissionExample */;
+			targetProxy = 040FCB7D23C060EC00265ACC /* PBXContainerItemProxy */;
+		};
+		040FCB8923C060EC00265ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 040FCB6223C060EA00265ACC /* NotificationPermissionExample */;
+			targetProxy = 040FCB8823C060EC00265ACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		040FCB6C23C060EA00265ACC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040FCB6D23C060EA00265ACC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		040FCB7423C060EC00265ACC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				040FCB7523C060EC00265ACC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		040FCB8E23C060EC00265ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		040FCB8F23C060EC00265ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		040FCB9123C060EC00265ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C367F31502285DD1B03B58 /* Pods-NotificationPermissionExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		040FCB9223C060EC00265ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F47A8CBB504B2150597E5D /* Pods-NotificationPermissionExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		040FCB9423C060EC00265ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6988E99684864CE25E1ED9B6 /* Pods-NotificationPermissionExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotificationPermissionExample.app/NotificationPermissionExample";
+			};
+			name = Debug;
+		};
+		040FCB9523C060EC00265ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 897064F7C530B0991D22E07A /* Pods-NotificationPermissionExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotificationPermissionExample.app/NotificationPermissionExample";
+			};
+			name = Release;
+		};
+		040FCB9723C060EC00265ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0986D5A0E3D8845CDFCFF7 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotificationPermissionExample;
+			};
+			name = Debug;
+		};
+		040FCB9823C060EC00265ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D484B5DB89942917FD65C9B2 /* Pods-NotificationPermissionExample-NotificationPermissionExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NotificationPermissionExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.NotificationPermissionExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NotificationPermissionExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		040FCB5E23C060EA00265ACC /* Build configuration list for PBXProject "NotificationPermissionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040FCB8E23C060EC00265ACC /* Debug */,
+				040FCB8F23C060EC00265ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040FCB9023C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040FCB9123C060EC00265ACC /* Debug */,
+				040FCB9223C060EC00265ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040FCB9323C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040FCB9423C060EC00265ACC /* Debug */,
+				040FCB9523C060EC00265ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		040FCB9623C060EC00265ACC /* Build configuration list for PBXNativeTarget "NotificationPermissionExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				040FCB9723C060EC00265ACC /* Debug */,
+				040FCB9823C060EC00265ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		040FCB6F23C060EA00265ACC /* NotificationPermissionExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				040FCB7023C060EA00265ACC /* NotificationPermissionExample.xcdatamodel */,
+			);
+			currentVersion = 040FCB7023C060EA00265ACC /* NotificationPermissionExample.xcdatamodel */;
+			path = NotificationPermissionExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 040FCB5B23C060EA00265ACC /* Project object */;
+}
