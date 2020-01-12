@@ -3,6 +3,7 @@ excluded:
   - Pods/
   - NotificationPermissionTests/Mocks/**
   - NotificationPermissionTests/GeneratedMocks.swift
+  - NotificationPermissionExample/
 
 line_length:
   - 300 # warning
