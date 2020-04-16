@@ -46,16 +46,16 @@ public final class PushNotificationEnrollment: PushNotificationEnrolling {
                     let authorizationStatus = settings.authorizationStatus
                     switch authorizationStatus {
                     case .authorized:
-                        print ("Push notifications already authorised")
+                        print("Push notifications already authorised")
                         single(.success(.authorized))
                     case .denied:
-                        print ("Push notifications denied - earlier")
+                        print("Push notifications denied - earlier")
                         single(.success(.denied))
                     case .notDetermined:
-                        print ("Push notifications not Determined")
+                        print("Push notifications not Determined")
                         single(.success(.notDetermined))
                     case .provisional:
-                        print ("Push notifications provisional")
+                        print("Push notifications provisional")
                         single(.success(.provisional))
                     @unknown default:
                         assertionFailure("UNUserNotificationCenter.current().getNotificationSettings.authorizationStatus is not available on this version of OS.")
