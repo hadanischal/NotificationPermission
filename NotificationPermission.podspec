@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NotificationPermission'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = "To access UNUserNotificationCenter and will be used to create a UNNotification and it will be used to notify the user"
   s.description      = "The NotificationPermission is a completely customizable helper class that can be used in any iOS app to access UNUserNotificationCenter."
   s.homepage         = 'https://github.com/hadanischal/NotificationPermission.git'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hadanischal/NotificationPermission.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/neeschalhada'
 
-  s.swift_version = '5.1'
+  s.swift_version = '5.2'
   s.ios.deployment_target = '12.0'
   s.source_files = 'NotificationPermission/Classes/**/*'
   
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'RxSwift', '~> 5.0.1'
-  s.dependency 'RxCocoa', '~> 5.0.1'
+  s.dependency 'RxSwift', '~> 5.1.1'
+  s.dependency 'RxCocoa', '~> 5.1.1'
 
 end
